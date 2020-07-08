@@ -47,11 +47,11 @@ const TimeTable = ()=>{
             }else if(dayofw === 5){
                 return timetable.fri
             }else{
-                return timetable.fri
+                return timetable.weekend
             }
         }
         const interval = setInterval(() => {
-            const date = new Date(2020,7,3,17,30)
+            const date = new Date()
             const hours = date.getHours()
             const min = date.getMinutes()
             let realmin = min.toString()
