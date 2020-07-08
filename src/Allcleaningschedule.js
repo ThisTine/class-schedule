@@ -18,7 +18,7 @@ const Allcleaningschedule = ()=>{
                     <tbody>
                         <tr>
                             <td>วันจันทร์</td>
-                        {cleaningjq[0].map(item=>{
+                        {cleaningjq[1].map(item=>{
                             return(
                                 <td key={item}>{item}</td>
                             )
@@ -26,14 +26,6 @@ const Allcleaningschedule = ()=>{
                         </tr>
                         <tr>
                             <td>วันอังคาร</td>
-                        {cleaningjq[1].map(item=>{
-                            return(
-                                <td  key={item}>{item}</td>
-                            )
-                        })}
-                        </tr>
-                        <tr>
-                            <td>วันพุธ</td>
                         {cleaningjq[2].map(item=>{
                             return(
                                 <td  key={item}>{item}</td>
@@ -41,7 +33,7 @@ const Allcleaningschedule = ()=>{
                         })}
                         </tr>
                         <tr>
-                            <td>วันพฤหัสบดี</td>
+                            <td>วันพุธ</td>
                         {cleaningjq[3].map(item=>{
                             return(
                                 <td  key={item}>{item}</td>
@@ -49,8 +41,16 @@ const Allcleaningschedule = ()=>{
                         })}
                         </tr>
                         <tr>
-                            <td>วันศุกร์</td>
+                            <td>วันพฤหัสบดี</td>
                         {cleaningjq[4].map(item=>{
+                            return(
+                                <td  key={item}>{item}</td>
+                            )
+                        })}
+                        </tr>
+                        <tr>
+                            <td>วันศุกร์</td>
+                        {cleaningjq[5].map(item=>{
                             return(
                                 <td  key={item}>{item}</td>
                             )
