@@ -13,23 +13,23 @@ const Cleaning = ()=>{
             if(day === 1){
                 setgday('จันทร์')
             }
-            if(day === 2){
+            else if(day === 2){
                 setgday("อังคาร")
             }
-            if(day === 3){
+            else if(day === 3){
                 setgday("พุธ")
             }
-            if(day === 4){
+            else if(day === 4){
                 setgday("พฤหัสบดี")
             }
-            if(day === 5){
+            else if(day === 5){
                 setgday("ศุกร์")
             }else{
                 setgday("หยุด")
             }
         }
         daycheck(dayq)
-        setnumarr(cleaingsc[dayq-1])
+        setnumarr(cleaingsc[dayq])
         return () => {}
     }, [])
     return(
